@@ -40,11 +40,11 @@ def amount_words_in_values (list_values):
         else:
             many_words = many_words + 1
 
-    percent_zero = round(zero_word*100/len(queries), 2)
-    percent_one = round(one_word*100/len(queries), 2)
-    percent_two = round(two_words*100/len(queries), 2)
-    percent_three = round(three_words*100/len(queries), 2)
-    percent_many = round(many_words*100/len(queries), 2)
+    percent_zero = round(zero_word*100/len(list_values), 2)
+    percent_one = round(one_word*100/len(list_values), 2)
+    percent_two = round(two_words*100/len(list_values), 2)
+    percent_three = round(three_words*100/len(list_values), 2)
+    percent_many = round(many_words*100/len(list_values), 2)
 
     amount_words = {'0': percent_zero,
                     '1': percent_one,
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     {'visit5': ['Париж', 'Франция']},
     {'visit6': ['Лиссабон', 'Португалия']},
     {'visit7': ['Тула', 'Россия']},
-    {'visit8': ['Тула', 'Россия']},
+    {'visit8': ['Казань', 'Россия']},
     {'visit9': ['Курск', 'Россия']},
     {'visit10': ['Архангельск', 'Россия']}
     ]
